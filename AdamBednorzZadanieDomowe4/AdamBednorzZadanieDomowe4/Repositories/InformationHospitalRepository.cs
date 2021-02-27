@@ -1,11 +1,6 @@
 ﻿using AdamBednorzZadanieDomowe4.Models.Entities;
-using AdamBednorzZadanieDomowe4.Models;
 using AdamBednorzZadanieDomowe4.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdamBednorzZadanieDomowe4.Repositories
 {
