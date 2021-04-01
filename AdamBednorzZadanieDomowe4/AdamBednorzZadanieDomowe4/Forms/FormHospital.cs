@@ -83,7 +83,7 @@ namespace AdamBednorzZadanieDomowe4
             }
             else
             {
-                //czyscimy dane
+                //czyścimy dane
                 MessageBox.Show("Niepoprawny login lub hasło!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxFirstName.Text = "";
                 textBoxLastName.Text = "";
