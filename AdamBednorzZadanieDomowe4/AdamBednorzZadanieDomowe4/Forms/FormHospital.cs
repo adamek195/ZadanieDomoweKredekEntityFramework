@@ -16,12 +16,7 @@ namespace AdamBednorzZadanieDomowe4
         /// Klasa do przetwarzania danych związanych z tabelą Patients
         /// </summary>
         private readonly PatientsRepository patientsRepository;
-        //tworzymy okno
-        FormSurgery formSurgery = new FormSurgery();
-        //tworzymy okno
-        FormPharmacy formPharmacy = new FormPharmacy();
-        //tworzymy okno
-        FormCanteen formCanteen = new FormCanteen();
+
         public FormHospital()
         {
             //Zainicjalizowanie repozytorium
@@ -77,6 +72,9 @@ namespace AdamBednorzZadanieDomowe4
             if (logged)
             {
                 MessageBox.Show("Udalo Ci sie zalogowac");
+                //tworzymy okno
+                FormSurgery formSurgery = new FormSurgery();
+                //pokazujemy okno
                 formSurgery.Show();
                 //czyscimy dane
                 textBoxFirstName.Text = "";
@@ -182,6 +180,9 @@ namespace AdamBednorzZadanieDomowe4
         /// <param name="e"></param>
         private void buttonCanteen_Click(object sender, EventArgs e)
         {
+            //tworzymy okno
+            FormCanteen formCanteen = new FormCanteen();
+            //pokazujemy okno
             formCanteen.Show();
         }
 
@@ -192,6 +193,9 @@ namespace AdamBednorzZadanieDomowe4
         /// <param name="e"></param>
         private void buttonPharmacy_Click(object sender, EventArgs e)
         {
+            //tworzymy okno
+            FormPharmacy formPharmacy = new FormPharmacy();
+            //pokazujemy okno
             formPharmacy.Show();
         }
     }
